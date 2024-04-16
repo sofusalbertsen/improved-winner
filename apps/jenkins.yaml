@@ -12,12 +12,12 @@ spec:
       valueFiles:
         - $values/jenkins/values.yaml
     chart: jenkins
-  - repoURL: 'https://github.com/<YOUR GIT REPO>/argocd-katas'
+  - repoURL: 'https://github.com/sofusalbertsen/improved-winner'
     targetRevision: main
     ref: values
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: student-<NUMBER>
+    namespace: student-0
   syncPolicy:
     automated:
       prune: true
